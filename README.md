@@ -135,6 +135,14 @@ Before you enter, run the site's own checks on your machine. A rejected entry st
 node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz
 ```
 
+Before you hit submit, run down this list — every item is a rejection the checks above have actually caught:
+
+- License at the repo root, MIT or another OSI-approved license, opening with its SPDX identifier.
+- README badges filled in with your own username and repository — no `{{ }}` placeholders left.
+- Screenshot of the finished repository page committed at the root, taken after your last change.
+- Kit check green with zero failures — fix what it flags rather than hoping the site is lenient.
+- Commit pushed to GitHub, and the commit you enter is the one you just checked.
+
 Then enter, either from the **Enter** form on the bounty page (paste your repository link and commit, upload the bundle) or from the kit:
 
 ```sh
